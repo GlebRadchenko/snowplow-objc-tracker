@@ -5,11 +5,12 @@ import PackageDescription
 let package = Package(
     name: "SnowplowTracker",
     platforms: [
-        .iOS(.v8)
+        .iOS(.v9)
     ],
     products: [
         .library(
             name: "SnowplowTracker",
+            type: .dynamic,
             targets: ["SnowplowTracker"]),
     ],
     dependencies: [
